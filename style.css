@@ -1,0 +1,412 @@
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+ }
+
+ /* Common Css Start  */
+
+ .container {
+    width: 95%;
+    height: auto;
+ }
+
+ /* Header Area Css Start  */
+
+ .header-area {
+    & .header-awrapper {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        & .logo {
+            img {
+                width: 150px;
+            }
+        }
+
+        & .menu{
+            ul {
+                list-style: none;
+                margin-top: -15px;
+                & :nth-child(4) {
+                    display: none;
+                }
+
+                & li {
+                    display: inline-block;
+                    & a {
+                        text-decoration: none;
+                        margin-left: 15px;
+                        font-size: 20px;
+                        font-weight: 500;
+                        color: #000;
+                    }
+                }
+            }
+        }
+
+        & .login-content{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 10px;
+
+            button {
+                border: none;
+                font-size: 17px;
+                font-weight: 500;
+                border: 1px solid #f1f1f1;
+                padding: 11px 28px;
+                border-radius: 30px;
+                cursor: pointer;
+            }
+
+            .h-btn {
+                background-color: #000;
+                color: #fff;
+            }
+            img {
+                width: 30px;
+            }
+        }
+    }
+ }
+
+
+ /* Hero area Css start  */
+
+    .hero-wrapper {
+        background-image: url(image/Rectangle\ 1.png);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding:12, 0;
+
+         .h-btn2 {
+            text-align: center;
+            margin-top: 60px;
+
+            button{
+                background-color: transparent;
+                border: none;
+                border: 1px solid #f1f1f1;
+                color: white ;
+                padding: 1px 40px; text-decoration: underline;
+                border-radius: 30px;
+                font-size: 17px;
+                cursor: pointer
+            }
+         }
+
+        & .find-offer {
+            width: 800px;
+            background-color: #fff;
+            padding: 35px;
+            border-radius: 15px;
+
+            h1 {
+                text-align: center;
+                font-weight: 500;
+            }
+
+            & .offer-item {
+                display: flex;
+                justify-content: space-evenly;
+                padding-top: 40px;
+                padding-bottom: 25px;
+
+                select {
+                    width: 150px;
+                    padding: 5px;
+                    background-color: #ececec;0
+                    border: none;
+                    border-radius: 4px;
+                    font-size: 17px;
+                }
+            }
+
+            & .offer-item-2{
+                display: flex;
+                margin: 30px;
+                padding-bottom: 20px;
+
+                h3 {
+                    background-color: #ececec;
+                    width: 500px;
+                    padding: 10px 0;
+                    text-align: center;
+                    border-radius: 4px;
+                    font-size: 14px;
+                    font-weight: 500;
+                }
+
+                button {
+                    border: none;
+                    background-color: #00ebc7;
+                    padding: 0 40px;
+                    border-radius: 30px;
+                    font-weight: 600;
+                    font-size: 16px;
+                    margin-left: 30px;
+                }
+            }
+        }
+    }
+
+    /* Brand Icon Css Start  */
+
+    .brand-icon {
+        background-color: #fde24f;
+        text-align: center;
+        padding: 30px;
+    
+        & .brand-icon-details{
+            h2 {
+                font-size: 24px;
+                font-weight: 500px;
+                margin-bottom: 20px;
+                margin-top: 20px;
+            }
+    
+            img {
+                width: 80%;
+                margin-top: 20px;
+            }
+        } 
+    }
+    
+    /* Feature Item Css Start  */
+    
+    .feature-area {
+        padding: 40px;
+        border-top: 1px solid #000;
+        border-bottom: 1px solid #000;
+        h2 {
+            font-style: 24px;
+            font-weight: 500;
+        }
+    
+        & .feature-btn {
+            text-align: center;
+            margin-top: 60px;
+            bottom {
+               border: none;
+               border: 2px solid #000;
+               background-color: transparent; 
+               font-size: 17px;
+               padding: 10px 25px;
+               border-radius: 30px;
+               cursor: pointer;
+            }
+        }
+    
+        & .feature-item {
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            justify-items: center;
+            margin-top: 60px;
+    
+            & .f-item{
+                text-align: center;
+                img{
+                    width: 60px;
+                }
+               h3 {
+                font-size: 18px;
+                font-weight: 500;
+                margin: 15px;
+               } 
+    
+               p {
+                width: 250px;
+                margin: 0 auto;
+                color: #535353;
+               }
+               a {
+                display: block;
+                margin-top: 30px;
+                color: #000;
+                font-size: 18px;
+    
+                span {
+                   font-style: italic; 
+                }
+               }
+    
+               position: relative;
+    
+               & .border::before {
+                content: "";
+                width: 45%;
+                height: 2px;
+                background-color: #000;
+                position: absolute;
+                top: 90px;
+                left: -120px;
+               }
+
+               & .border::after {
+                contant: "";
+                width: 45%;
+                height: 2px;
+                background-color: #000;
+                position: absolute;
+                top: 90px;
+                right: -120px;
+               }
+            }
+        }
+    }
+
+    /* Buy / Sell Css Start  */
+
+    .buy-sell {
+        padding: 70px  0;
+        background-color: #f8f8f8;
+        border-bottom: 1px solid #000;
+
+        & .buy-sell-content {
+            display: grid;
+            grid-template-columns: repeat (2, 1fr);
+            justify-items: center;
+        }
+         
+        & .buy {
+            h3 {
+                margin-bottom: 30px;
+            }
+
+            & .buy-sell-item {
+                display: flex;
+                gap: 30px;
+                background-color: #fff;
+                border: 1px solid #000;
+                border-radius:10px; 
+                margin-bottom: 15px;
+                width: 520px;
+                img {
+                    width: 50px;
+                    object-fit: center;
+                    margin-left: 20px;
+                }
+
+                & .buy-sell-details {
+                    display: flex;
+                    gap: 25px;
+                    justify-content: center;
+                    align-items: center;
+                    margin-top: 30px;
+
+                    h3 {
+                        font-weight: 500px;
+                    }
+                }
+            }
+        }
+
+        & .sell {
+            position: relative;
+
+            &. sell-border::before {
+                content: "";
+                width: 1px;
+                height: 132px 9%;
+                background-color: #000;
+                position: absolute;
+                top: -70px;
+                left: -95px;
+            }
+        }
+
+        & .buy-sell-btn {
+            text-align: center;
+            margin-top: 50px;
+
+            button {
+                border: none;
+                background-color: #000;
+                color: #fff;
+                padding: 10px 25px;
+                border-radius: 30px;
+                font-size: 17px;
+                font-weight: 500;
+            }
+        }
+    }
+
+    /* crypto Area Start  */
+
+    .crypto-area {
+        text-align: center;
+        background-color: #cfbaff;
+        padding: 90px;
+
+        h2 {
+            font-size: 55px;
+        }
+
+        button {
+            border: none;
+            background-color: #000;
+            color: #fff;
+            padding: 10px 25px;
+            border-radius: 30px;
+            margin-top: 50px;
+            font-size: 19px;
+            font-weight: 500;
+        }
+    }
+
+
+    /* Footer Area Start  */
+
+    footer {
+        color: #fff;
+        background-color: #000;
+        padding: 40px 0;
+
+        & .footer-wrapper{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            padding-bottom: 60px;
+
+            & .f-item{
+                h3 {
+                    font-size: 22px;
+                    font-weight: 500;
+                }
+
+                ul {
+                    list-style: none;
+                    margin-top: 25px;
+                     
+                    li {
+                        display: block;
+                        a {
+                            text-decoration: none;
+                            color: white;
+                            display: block;
+                            font-size: 17px;
+                            margin-bottom: 10px;
+                        }
+                    }
+                }
+            }
+        } 
+
+        & .footer-bottom {
+            border-top: 1px solid #fff;
+            p {
+                font-size: 1px;
+                font-weight: 300;
+                text-align: center;
+                margin-top: 30px;
+            }
+        }
+
+    }
+    
